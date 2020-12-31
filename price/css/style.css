@@ -1,0 +1,846 @@
+@charset "UTF-8";
+
+/* 
+=====================
+基本設定
+=====================
+*/
+
+* {
+    outline: none!important;
+}
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    color: #333;
+    font-size: 14px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+ul, li {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+
+/* 
+=====================
+ヘッダー
+=====================
+*/
+
+header {
+    height: 100px;
+    background:linear-gradient(45deg, #530710,#8b0000, #9c0743, #c71585, #9c0743,#8b0000, #530710);
+}
+
+.header-content {
+    max-width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-log {
+    width: 20%;
+}
+
+
+.header-access {
+    display: none;
+}
+
+
+.header-access-pc h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.header-tell {
+    display: flex;
+}
+
+.header-tell a {
+    font-family: 'Old Standard TT', serif;
+    font-size: 38px;
+    color: white;
+    letter-spacing: -0.1em;
+    transition: 0.4s;
+}
+
+.header-access-pc p {
+    color: white;
+    padding-left: 10px;
+    line-height: 1.3em;
+}
+
+.header-tell a:hover {
+    text-decoration: underline;
+    transition: 0.4s;
+    /* opacity: 0.8; */
+}
+
+
+
+/* 
+=====================
+本文
+=====================
+*/
+main {
+    max-width: 960px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* タイトル１ */
+.title1 {
+    margin: 0 auto;
+    font-size: 28px;
+    width: 100%;
+    height: auto;
+    background-color: #f9d4e6;
+    border-bottom: 5px solid #e663a4;
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+/* タイトル２ */
+.title2 {
+    margin: 0 auto;
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+    color: #e64296;
+    letter-spacing: -0.1em;
+    border-bottom: 1px solid #e64296;
+    border-left: 10px solid #e64296;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+
+/* 商品 */
+
+.product {
+    max-width: 710px;
+    margin: 0 auto;
+}
+
+.product ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product li {
+    width: 48%;
+    text-align: center;
+}
+
+.product h4 {
+    width: 100%;
+    height: auto;
+    background-color: #701a3f;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 5px;
+    padding-top: 7px;
+}
+
+.product .p0 {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    line-height: 1.4em;
+    font-size: 12px;
+    /* border-bottom: 0.5px solid black; */
+    /* height: 90px; */
+}
+
+.product span {
+    color: #f3399f;
+    font-size: 12px;
+}
+
+.price {
+    border-top: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.product .p1 {
+    font-size: 14px;
+    margin: 3px;
+}
+
+.product .p2 {
+    font-size: 20px;
+}
+
+
+/* 健康と美をサポートするスーパー酵素食品ご案内 */
+
+.content1 {
+    max-width: 710px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.content1 .product .p0 {
+    height: auto;
+}
+
+/* デトックスドリンクとして、ボヌールアヴィをおすすめします！ */
+
+.content2 {
+    max-width: 710px;
+    padding-top: 140px;
+    margin: 0 auto;
+}
+
+.content2 .p3 {
+    display: block;
+    background-color: #f4e4f1;
+    font-size: 24px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    letter-spacing: 0.05em;
+    line-height: 1.4em;
+}
+
+.content2 .product .p0 {
+    height: auto;
+}
+
+/* 食べながら、ダイエット効果に期待！ */
+.content3 {
+    max-width: 710px;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.content3 .p4 {
+    font-size: 24px;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    line-height: 1.4em;
+}
+
+.content3 .product .p0 {
+    height: auto;
+}
+
+
+.content3 .product ul:last-child {
+    justify-content: space-around;
+}
+
+.content3 .product ul:last-child .p0 {
+    height: auto;
+}
+
+
+
+/* 送料と支払い方法 */
+.note {
+    max-width: 710px;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.note .p5 {
+    display: block;
+    background-color: #e7f6fd;
+    font-size: 22px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+}
+
+/* 連絡先 */
+.main-access {
+    max-width: 710px;
+    height: 200px;
+    margin: 40px auto;
+    position: relative;
+    /* background-image: url("../images/flame.png");
+    background-size: cover; */
+}
+
+.main-access img {
+    width: 100%;
+    height: 200px;
+}
+
+.access-content {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.main-access .p6 {
+    font-family: 'Noto Serif JP', serif;
+    width: 80%;
+    display: block;
+    height: auto;
+    padding: 5px 0;
+    background-color: #701a3f;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+.main-access .p6 span {
+    font-size: 20px;
+    padding-left: 24px;
+}
+
+.main-tell {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.main-tell img {
+    width: auto;
+}
+
+.main-tell a {
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+    color: #701a3f;
+    letter-spacing: -0.1em;
+    transition: 0.4s;
+}
+
+.main-tell a:hover {
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.main-access .p7 {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    padding-right: 120px;
+}
+
+
+
+
+
+/* 
+=====================
+フッター
+=====================
+*/
+footer {
+    height: 180px;
+    background:linear-gradient(45deg, #530710,#8b0000, #9c0743, #c71585, #9c0743,#8b0000, #530710);
+}
+
+.footer-content {
+    display: flex;
+    max-width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* 左側 */
+.footer-access {
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+/* ロゴ */
+.footer-logo {
+    padding-bottom: 10px;
+}
+
+.footer-logo p {
+    font-family: 'Old Standard TT', serif;
+    color: white;
+    font-size: 16px;
+}
+
+/* 連絡先 */
+.footer-tell {
+    line-height: 1.5em;
+}
+.footer-tell h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+}
+
+.footer-tell a {
+    font-size: 18px;
+    color: white;
+    transition: 0.4s;
+}
+
+.footer-tell a:hover {
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+.footer-tell p {
+    font-size: 16px;
+    color: white;
+}
+
+/* メニュー */
+/* PC用表示 */
+.footer-menue-pc {
+    display: block;
+    width: 65%;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+/* スマホ用は隠す */
+.footer-menue {
+    display: none;
+}
+
+.footer-menue-pc ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-menue-pc li {
+    width: 40%;
+    line-height: 1.6em;
+    padding: 2px;
+}
+
+.footer-menue-pc .border {
+    display: block;
+    width: 200px;
+    border-bottom: 1px dotted white;
+    margin: 0 auto;
+}
+
+.footer-menue-pc .non-border {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.footer-menue-pc a {
+    display: block;
+    width: 200px;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.footer-menue-pc a:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+/* 
+==========================================
+フッターメニュー縦並び　タブレット～スマホ向け
+==========================================
+*/
+
+@media screen and (max-width:960px ) {
+
+
+/* 
+=====================
+本文
+=====================
+*/
+
+/* 連絡先 */
+.main-access .p6 {
+    line-height: 1.4em;
+    padding: 5px 20px;
+}
+
+.main-access .p6 span {
+    display: inline-block;
+}
+
+/* 
+=====================
+フッター
+=====================
+*/
+footer {
+    height: 300px;
+    width: 100%;
+}
+
+/* 左側 */
+.footer-access {
+    width: 40%;
+}
+
+/* PC用は隠す */
+.footer-menue-pc {
+    display: none;
+}
+
+/* スマホ用表示 */
+.footer-menue {
+    display: block;
+    width: 60%;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.footer-menue li {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6em;
+    padding: 2px;
+}
+
+.footer-menue .border {
+    display: block;
+    width: 200px;
+    border-bottom: 1px dotted white;
+    margin: 0 auto;
+}
+
+.footer-menue .non-border {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.footer-menue a {
+    display: block;
+    width: 200px;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.footer-menue a:hover {
+    opacity: 0.5;
+}
+
+
+
+
+}
+
+
+
+
+/* 
+==========================================
+文字サイズ縮小　スマホ向け
+==========================================
+*/
+
+@media screen and (max-width:600px ) {
+
+/* 
+=====================
+基本設定
+=====================
+*/
+
+
+p {
+    font-size: 10px;
+}
+
+a {
+    font-size: 10px;
+}
+
+
+ul, li {
+    font-size: 14px;
+}
+
+
+
+
+
+/* 
+=====================
+ヘッダー
+=====================
+*/
+
+
+.header-content {
+
+    height: 100px;
+
+}
+
+.header-access-pc {
+    display: none;
+}
+
+.header-access {
+    display: block;
+    float: right;
+}
+
+
+.header-access p {
+    color: white;
+    padding-left: 10px;
+    line-height: 1.3em;
+}
+
+
+
+.header-access h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+
+.header-tell a {
+    font-size: 20px;
+}
+
+
+
+/* 
+=====================
+本文
+=====================
+*/
+
+/* タイトル１ */
+.title1 {
+    font-size: 18px;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* タイトル２ */
+.title2 {
+    font-size: 18px;
+    height: auto;
+    padding-left: 10px;
+}
+
+
+/* 商品 */
+
+.product ul {
+    width: 100%;
+    display: block;
+}
+
+.product li {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.product h4 {
+    height: 28px;
+    font-size: 14px;
+}
+
+.product .p0 {
+    font-size: 8px;
+    display: block;
+    height: auto;
+}
+
+.product span {
+    font-size: 8px;
+}
+
+
+.product .p1 {
+    font-size: 8px;
+}
+
+.product .p2 {
+    font-size: 14px;
+}
+
+
+/* 健康と美をサポートするスーパー酵素食品ご案内 */
+
+
+.content1 .product .p0 {
+    height: auto;
+}
+
+/* デトックスドリンクとして、ボヌールアヴィをおすすめします！ */
+
+
+.content2 .p3 {
+    font-size: 14px;
+}
+
+.content2 .product .p0 {
+    height: auto;
+}
+
+/* 食べながら、ダイエット効果に期待！ */
+
+.content3 .p4 {
+    font-size: 14px;
+}
+
+.content3 .product .p0 {
+    height: auto;
+}
+
+.content3 .product ul:last-child .p0 {
+    height: auto;
+}
+
+
+
+/* 送料と支払い方法 */
+
+.note .p5 {
+    font-size: 15px;
+}
+
+/* 連絡先 */
+.main-access {
+    height: auto;
+}
+
+.main-access img {
+    height: 200px;
+}
+
+.access-content {
+    height: auto;
+}
+
+.main-access .p6 {
+    font-size: 13px;
+}
+
+.main-access .p6 span {
+    font-size: 15px;
+}
+
+
+.main-tell a {
+    font-size: 28px;
+}
+
+
+.main-access .p7 {
+    font-size: 13px;
+    padding-right: 50px;
+}
+
+
+/* 
+=====================
+フッター
+=====================
+*/
+
+
+/* 左側 */
+.footer-access {
+    width: 45%;
+}
+
+/* ロゴ */
+
+
+.footer-logo p {
+    font-size: 12px;
+}
+
+/* 連絡先 */
+
+.footer-tell h3 {
+    font-size: 12px;
+
+}
+
+.footer-tell a {
+    font-size: 16px;
+
+}
+
+.footer-tell p {
+    font-size: 11px;
+
+}
+
+/* スマホ用メニュー */
+.footer-menue {
+    width: 50%;
+}
+
+.footer-menue li {
+    width: 99%;
+}
+
+.footer-menue .border {
+    width: 145px;
+}
+
+.footer-menue .non-border {
+    width: 145px;
+}
+
+.footer-menue a {
+    width: 145px;
+    font-size: 11px;
+}
+
+}
