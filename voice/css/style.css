@@ -108,7 +108,6 @@ header {
 
 
 
-
 /* 
 =====================
 本文
@@ -137,7 +136,7 @@ main {
 /* タイトル２ */
 .title2 {
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 25px;
     width: 100%;
     height: auto;
     color:#BE0F60;
@@ -158,128 +157,22 @@ main {
     color:#D5006C;
     text-align: center;
     line-height: 1.2em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
 }
 
 .title3 span {
     /* font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 900; */
     margin: 0 auto;
-    font-size: 27px;
+    font-size: 30px;
     width: 100%;
     color:#D5006C;
     text-align: center;
     line-height: 1.2em;
 }
 
-/* 商品 */
 
-.product {
-    max-width: 710px;
-    margin: 0 auto;
-}
-
-.product ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 40px;
-}
-
-.product li {
-    width: 47%;
-    text-align: center;
-}
-
-.product h4 {
-    width: 100%;
-    height: auto;
-    background-color: #711A41;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10px;
-    font-size: 19px;
-    font-weight: normal;
-    padding: 10px 5px;
-}
-
-.product .p0 {
-    display: block;
-    text-align: left;
-    padding: 10px 5px;
-    line-height: 1.8em;
-    letter-spacing: 0.1em;
-    font-size: 14px;
-    /* border-bottom: 0.5px solid black; */
-    /* height: 90px; */
-}
-
-.product span {
-    color: #BE0F60;
-    font-size: 12px;
-}
-
-.price {
-    border-top: 0.5px solid #711A41;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 20px;
-
-}
-
-.product .p1 {
-    font-size: 14px;
-    margin: 3px;
-}
-
-.product .p2 {
-    font-size: 20px;
-}
-
-.product .p4 {
-    font-size: 13px;
-    line-height: 1.4em;
-}
-
-
-.single-price {
-    height: 180px;
-}
-
-.set-price {
-    text-align: center;
-    line-height: 1em;
-    height: 180px;
-}
-
-.set-price .p1 {
-    font-size: 12px;
-    display: block;
-}
-
-.set-price .p1 span {
-    font-size: 14px;
-    color: #333;
-}
-
-.set-price .p2 {
-    font-size: 12px;
-}
-
-.set-price .p2 span {
-    font-size: 14px;
-    color: #BE0F60;
-    font-weight: bold;
-}
-
-.set-price .p3 {
-    font-size: 10px;
-}
-
-
-/* コロナ感染予防対策～特別キャンペーン企画～ */
+/* お客様の声 */
 
 .content1 {
     max-width: 710px;
@@ -287,118 +180,153 @@ main {
     margin: 0 auto;
 }
 
-.content1 .title2 {
-    margin-top: 20px;
+.content1 .title3 {
+    padding-top: 20px;
+    text-align: left;
+    width: auto;
+    margin: 0;
 }
 
-.content1 .product .p0 {
-    height: auto;
+.voice-title {
+    display: flex;
 }
 
-/* コラーゲン不足が気になる方！酵素＆コラーゲン効果を実感！ */
-
-.content2 {
-    max-width: 710px;
-    padding-top: 100px;
-    margin: 0 auto;
+.voice-title img {
+    height: 100%;
+    padding-top: 20px;
 }
 
-.content2 h4 {
-    padding: 10px 0;
-}
-
-.content2 .product .p0 {
-    height: auto;
-}
-
-.content2 .product li:last-child h4 {
-    letter-spacing: -0.06em;
-    font-size: 17px;
-}
-
-.present {
-    text-align: center;
-    padding-top: 50px;
-}
-
-.present img {
+/* 改行なし（PC向け）：表示 */
+.voice-content-pc {
+    display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* お得なエコパッケージ2個セット */
-.content3 {
-    max-width: 710px;
-    padding-top: 80px;
-    margin: 0 auto;
-}
-
-.content3 .title2 {
-    margin-top: 20px;
-}
-
-.content3 .product .p0 {
-    height: auto;
+/* 改行あり（スマホ向け）：隠す */
+.voice-content {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
-.content3 .product ul:last-child {
-    justify-content: space-around;
+/* 左側：写真 */
+.voice-content-pc img {
+    width: 15%;
+    object-fit: contain;
 }
 
-.content3 .product ul:last-child .p0 {
-    height: auto;
+/* 右側：説明 */
+.life-about {
+    width: 80%;
 }
 
-.content3 .product li:last-child h4 {
-    letter-spacing: -0.06em;
+.life {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
 }
 
+.life p {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4em;
+}
 
-/* 特別価格から定期コースご注文の方 */
+.life p span {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    color: #D5006C;
+}
 
-.special-price {
-    max-width: 710px;
-    height: 200px;
-    margin: 40px auto;
+.meal {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.breakfast, .dinner {
+    width: 48%;
+    border-radius: 15px;
     position: relative;
 }
 
-.special-price img {
-    width: 100%;
-    height: 250px;
+
+.breakfast {
+    background-color: #fcf9ac;
 }
 
-.price-content {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    margin: auto;
-    text-align: center;
-}
-
-.price-content img {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
-}
-
-.price-content ul {
-    width: 350px;
-    margin: 0 auto;
-    text-align: left;
-    padding-top: 10px;
-}
-
-.price-content li {
-    font-size: 22px;
+.breakfast p, .dinner p {
+    padding: 15px 10px;
+    padding-left: 30px;
     line-height: 1.4em;
-    color: #D5006C;
+    font-size: 13px;
 }
+
+.breakfast h5, .dinner h5 {
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    padding: 6px;
+    font-size: 20px;
+}
+
+.breakfast h5 {
+    background-color: #fef22a;
+    border: 1px solid #fef22a;
+}
+
+.dinner {
+    background-color: #d4e4f1;
+}
+
+.dinner h5 {
+    background-color: #1c2087;
+    color: white;
+    border: 1px solid #1c2087;
+}
+
+.meal-img {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.meal-img img {
+    width: 100%;
+    max-height: 230px;
+    object-fit: contain;
+}
+
+
+
+/* 若さと健康を維持、、、 */
+
+.content2 {
+    max-width: 710px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.content2 .p5 {
+    display: block;
+    background-color: #e7f6fd;
+    font-size: 23px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+}
+
 
 /* 連絡先 */
 .main-access {
@@ -474,7 +402,6 @@ main {
     font-size: 18px;
     padding-top: 10px;
 }
-
 
 
 
@@ -629,9 +556,6 @@ footer {
 }
 
 
-
-
-
 /* 
 ====================================================================================
 文字サイズ縮小　PC～タブレット向け
@@ -674,7 +598,7 @@ header {
 */
 
 /* 本文全体 */
-.content1, .content2, .content3, .special-price {
+.content1, .content2 {
     max-width: 550px;
 } 
 
@@ -691,75 +615,58 @@ header {
 
 /* タイトル２ */
 .title2 {
-    font-size: 20px;
+    font-size: 21px;
     height: auto;
     padding-left: 10px;
 }
 
+/* タイトル３ */
+.title3 {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
 
-/* 商品 */
+.title3 span {
+    font-size: 26px;
+}
 
-.product h4 {
+/* お客様の声 */
+
+.life p {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
     font-size: 14px;
+    line-height: 1.4em;
 }
 
-.product .p0 {
-    font-size: 8px;
-}
-
-.product .p1 {
-    font-size: 10px;
-}
-
-.product .p2 {
+.life p span {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
     font-size: 14px;
+    color: #e64296;
 }
 
-
-/* コロナ感染予防対策～特別キャンペーン企画～ */
-
-
-/* コラーゲン不足が気になる方！酵素＆コラーゲン効果を実感！ */
-.content2 .title2 {
-    letter-spacing: -0.1em;
+.meal {
+    padding-top: 10px;
 }
 
-.content2 .product li:last-child h4 {
-    letter-spacing: -0.06em;
+.breakfast h5, .dinner h5 {
     font-size: 13px;
 }
 
-/* お得なエコパッケージ2個セット */
+.breakfast p, .dinner p {
+    font-size: 11px;
+    padding: 10px 3px;
+    padding-left: 15px;
 
-.content3 .title2 {
-    letter-spacing: -0.05em;
 }
 
-
-/* 特別価格から定期コースご注文の方 */
-
-.special-price {
-    height: 200px;
+.content2 .p5 {
+    font-size: 22px;
 }
-
-.special-price img {
-    width: 100%;
-    height: 230px;
-}
-
-
-.price-content img {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
-}
-
-.price-content li {
-    font-size: 20px;
-}
-
-
-
 
 /* 連絡先 */
 
@@ -842,7 +749,6 @@ footer {
 
 
 
-
 }
 
 
@@ -853,7 +759,6 @@ footer {
 横並び→縦並び　スマホ向け
 ====================================================================================
 */
-
 
 @media screen and (max-width:600px ) {
 
@@ -932,8 +837,20 @@ header {
     padding-left: 10px;
 }
 
+
+/* タイトル３ */
+.title3 {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.title3 span {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
 /* 本文全体 */
-.content1, .content2, .content3, .special-price {
+.content1, .content2 {
     max-width: 400px;
 } 
 
@@ -942,96 +859,69 @@ header {
 }
 
 
-/* 商品 */
-.price {
-    padding: 10px;
+/* お客様の声 */
+.voice-title {
+    justify-content: center;
 }
 
-.product .p0 {
-    font-size: 8px;
+.voice-title img {
+    padding-top: 10px;
 }
 
-.product ul {
-    width: 100%;
-    display: block;
+.voice-content-pc {
+    display: none;
 }
 
-.product li {
-    width: 90%;
-    margin: 0 auto;
+.voice-content {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
 }
 
-.product li:nth-child(n+2) {
-    padding-top: 50px;
+/* 左側：写真 */
+.voice-content img {
+    width: 30%;
+    object-fit: contain;
+    max-height: 80px;
+    padding-right: 20px;
 }
 
-.product .p0 {
-    display: block;
-    height: auto;
+/* 右側：説明 */
+.life-about {
+    width: auto;
 }
 
-
-/* コロナ感染予防対策～特別キャンペーン企画～ */
-.content1 .product .p0 {
-    height: auto;
+.life {
+    padding-top: 0;
 }
 
-
-/* コラーゲン不足が気になる方！酵素＆コラーゲン効果を実感！ */
-
-.content2 .product li:last-child h4 {
-    letter-spacing: -0.1em;
-    font-size: 12px;
-}
-
-.content2 .product .p0 {
-    height: auto;
-}
-
-/* お得なエコパッケージ2個セット */
-
-.content3 .product li:last-child h4 {
-    letter-spacing: 0;
-    font-size: 12px;
-}
-
-.content3 .product .p0 {
-    height: auto;
-}
-
-.content3 .product ul:last-child .p0 {
-    height: auto;
-}
-
-
-/* 特別価格から定期コースご注文の方 */
-
-.special-price {
-    height: 170px;
-}
-
-.special-price img {
-    width: 100%;
-    height: 170px;
-}
-
-.price-content {
-    height: 120px;
-}
-
-.price-content img {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
-}
-
-.price-content ul {
-    width: 210px;
-}
-
-.price-content li {
+.life p {
     font-size: 13px;
-    line-height: 1.6em;
+}
+
+.life p span {
+    font-size: 13px;
+}
+.meal {
+    display: block;
+}
+
+.breakfast, .dinner {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.breakfast p, .dinner p {
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+
+/* 若さと健康を維持、、、 */
+
+
+.content2 .p5 {
+    font-size: 14px;
 }
 
 
