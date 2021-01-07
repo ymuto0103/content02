@@ -1,0 +1,1189 @@
+@charset "UTF-8";
+
+/* 
+=====================
+基本設定
+=====================
+*/
+
+* {
+    outline: none!important;
+}
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    color: #333;
+    font-size: 14px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+ul, li {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+
+/* 
+=====================
+ヘッダー
+=====================
+*/
+
+header {
+    height: 100px;
+    /* background:linear-gradient(90deg, #530710,#8b0000, #9c0743, #c71585, #c71585, #9c0743,#8b0000, #530710); */
+    background-image: url(../../images/bkgcolor.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content {
+    max-width: 810px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-log {
+    width: 30%;
+}
+
+.header-log img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-access {
+    display: none;
+}
+
+
+.header-access-pc h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    padding: 5px 0;
+}
+
+
+.header-tell {
+    display: flex;
+}
+
+.header-tell a {
+    transition: 0.4s;
+}
+
+.header-tell img {
+    object-fit: contain;
+    height: 100%;
+    display: block;
+}
+
+.header-access-pc p {
+    color: white;
+    padding-left: 40px;
+    font-size: 13px;
+    line-height: 1.3em;
+    display: block;
+}
+
+.header-tell img:hover {
+    transition: 0.8s;
+    opacity: 0.4;
+}
+
+
+
+
+/* 
+=====================
+本文
+=====================
+*/
+main {
+    max-width: 960px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* タイトル１ */
+.title1 {
+    margin: 0 auto;
+    font-size: 28px;
+    width: 100%;
+    height: auto;
+    background-color: #f9d4e6;
+    border-bottom: 5px solid#BE0F60;
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+    line-height: 1.2em;
+}
+
+/* タイトル２ */
+.title2 {
+    margin: 0 auto;
+    font-size: 24px;
+    width: 100%;
+    height: auto;
+    color:#BE0F60;
+    border-bottom: 1px solid#BE0F60;
+    border-left: 10px solid#BE0F60;
+    padding: 10px 0;
+    padding-left: 20px;
+    line-height: 1.2em;
+}
+
+/* タイトル３ */
+.title3 {
+    /* font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900; */
+    margin: 0 auto;
+    font-size: 28px;
+    width: 100%;
+    color:#D5006C;
+    text-align: center;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+.title3 span {
+    /* font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900; */
+    margin: 0 auto;
+    font-size: 27px;
+    width: 100%;
+    color:#D5006C;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+/* 商品 */
+
+.product {
+    max-width: 710px;
+    margin: 0 auto;
+}
+
+.product ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.product li {
+    width: 47%;
+    text-align: center;
+}
+
+.product h4 {
+    width: 100%;
+    height: auto;
+    background-color: #711A41;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: normal;
+    padding: 10px 5px;
+}
+
+.product .p0 {
+    display: block;
+    text-align: left;
+    padding: 10px 5px;
+    line-height: 1.8em;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    /* border-bottom: 0.5px solid black; */
+    /* height: 90px; */
+}
+
+.product span {
+    color: #BE0F60;
+    font-size: 12px;
+}
+
+.price {
+    border-top: 0.5px solid #711A41;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+
+}
+
+.product .p1 {
+    font-size: 14px;
+    margin: 3px;
+}
+
+.product .p2 {
+    font-size: 20px;
+}
+
+.product .p4 {
+    font-size: 13px;
+    line-height: 1.4em;
+}
+
+
+.single-price {
+    height: 180px;
+}
+
+.set-price {
+    text-align: center;
+    line-height: 1em;
+    height: 180px;
+}
+
+.set-price .p1 {
+    font-size: 12px;
+    display: block;
+}
+
+.set-price .p1 span {
+    font-size: 14px;
+    color: #333;
+}
+
+.set-price .p2 {
+    font-size: 12px;
+}
+
+.set-price .p2 span {
+    font-size: 14px;
+    color: #BE0F60;
+    font-weight: bold;
+}
+
+.set-price .p3 {
+    font-size: 10px;
+}
+
+
+/* コロナ感染予防対策～特別キャンペーン企画～ */
+
+.content1 {
+    max-width: 710px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.content1 .title2 {
+    margin-top: 20px;
+}
+
+.content1 .product .p0 {
+    height: auto;
+}
+
+/* コラーゲン不足が気になる方！酵素＆コラーゲン効果を実感！ */
+
+.content2 {
+    max-width: 710px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.content2 h4 {
+    padding: 10px 0;
+}
+
+.content2 .product .p0 {
+    height: auto;
+}
+
+.content2 .product li:last-child h4 {
+    letter-spacing: -0.06em;
+    font-size: 17px;
+}
+
+.present {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.present img {
+    width: 100%;
+}
+
+/* お得なエコパッケージ2個セット */
+.content3 {
+    max-width: 710px;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.content3 .title2 {
+    margin-top: 20px;
+}
+
+.content3 .product .p0 {
+    height: auto;
+}
+
+
+.content3 .product ul:last-child {
+    justify-content: space-around;
+}
+
+.content3 .product ul:last-child .p0 {
+    height: auto;
+}
+
+.content3 .product li:last-child h4 {
+    letter-spacing: -0.06em;
+}
+
+
+/* 特別価格から定期コースご注文の方 */
+
+.special-price {
+    max-width: 710px;
+    height: 200px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.special-price img {
+    width: 100%;
+    height: 250px;
+}
+
+.price-content {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+}
+
+.price-content img {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.price-content ul {
+    width: 350px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.price-content li {
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #D5006C;
+}
+
+/* 連絡先 */
+.main-access {
+    max-width: 710px;
+    height: 200px;
+    margin: 40px auto;
+    position: relative;
+    /* background-image: url("../images/flame.png");
+    background-size: cover; */
+}
+
+.main-access img {
+    width: 100%;
+    height: 200px;
+}
+
+.access-content {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.main-access .p6 {
+    font-family: 'Noto Serif JP', serif;
+    width: 90%;
+    display: block;
+    height: auto;
+    padding: 10px 0;
+    background-color: #701a3f;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.main-access .p6 span {
+    font-size: 20px;
+    padding-left: 24px;
+}
+
+.main-tell {
+    text-align: center;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.main-tell img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.main-tell a {
+    transition: 0.4s;
+}
+
+.main-tell a:hover {
+    opacity: 0.4;
+    transition: 0.4s;
+}
+
+.main-access .p7 {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+/* 
+=====================
+フッター
+=====================
+*/
+footer {
+    height: 180px;
+    /* background:linear-gradient(90deg, #530710,#8b0000, #9c0743, #c71585, #c71585, #9c0743,#8b0000, #530710); */
+    background-image: url(../../images/bkgcolor2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-content {
+    display: flex;
+    max-width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* 左側 */
+.footer-access {
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+/* ロゴ */
+.footer-logo img {
+    padding-top: 20px;
+    width: 75%;
+}
+
+.footer-logo p {
+    font-family: 'Old Standard TT', serif;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-logo a {
+    transition: 0.4s;
+}
+
+.footer-logo img:hover {
+    opacity: 0.4;
+    transition: 0.4s;
+}
+
+/* 連絡先 */
+.footer-tell {
+    line-height: 1.5em;
+}
+.footer-tell h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+}
+
+.footer-tell a {
+    font-size: 22px;
+    color: white;
+    transition: 0.4s;
+}
+
+.footer-tell a:hover {
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+.footer-tell p {
+    font-size: 16px;
+    color: white;
+}
+
+/* メニュー */
+/* PC用表示 */
+.footer-menue-pc {
+    display: block;
+    width: 65%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+/* スマホ用は隠す */
+.footer-menue {
+    display: none;
+}
+
+.footer-menue-pc ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-menue-pc li {
+    width: 40%;
+    line-height: 1.6em;
+    padding: 2px;
+}
+
+.footer-menue-pc .border {
+    display: block;
+    width: 200px;
+    border-bottom: 1px dotted white;
+    margin: 0 auto;
+}
+
+.footer-menue-pc .non-border {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.footer-menue-pc a {
+    display: block;
+    width: 200px;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.footer-menue-pc a:hover {
+    opacity: 0.5;
+}
+
+.footer-menue-pc .non-border {
+    display: block;
+    width: 185px;
+    margin: 0 auto;
+}
+
+
+.footer-menue-pc .border {
+    display: block;
+    width: 185px;
+    border-bottom: 1px dotted white;
+    margin: 0 auto;
+}
+
+.footer-menue-pc a {
+    display: block;
+    width: 185px;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+
+
+
+
+/* 
+====================================================================================
+文字サイズ縮小　PC～タブレット向け
+====================================================================================
+*/
+
+@media screen and (max-width:1024px ) {
+
+/* 
+=====================
+ヘッダー
+=====================
+*/
+header {
+    height: 80px;
+}
+
+.header-content {
+    padding: 0 20px;
+    height: 80px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.header-access-pc h1 {
+    font-size: 16px;
+}
+
+
+.header-access-pc p {
+    font-size: 10px;
+    padding-left: 0;
+}
+
+
+/* 
+=====================
+本文
+=====================
+*/
+
+/* 本文全体 */
+.content1, .content2, .content3, .special-price {
+    max-width: 550px;
+} 
+
+.main-access {
+    max-width: 550px;
+}
+
+/* タイトル１ */
+.title1 {
+    font-size: 20px;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* タイトル２ */
+.title2 {
+    font-size: 20px;
+    height: auto;
+    padding-left: 10px;
+}
+
+
+/* 商品 */
+
+.product h4 {
+    font-size: 14px;
+}
+
+.product .p0 {
+    font-size: 8px;
+}
+
+.product .p1 {
+    font-size: 10px;
+}
+
+.product .p2 {
+    font-size: 14px;
+}
+
+
+/* コロナ感染予防対策～特別キャンペーン企画～ */
+
+
+/* コラーゲン不足が気になる方！酵素＆コラーゲン効果を実感！ */
+.content2 .title2 {
+    letter-spacing: -0.1em;
+}
+
+.content2 .product li:last-child h4 {
+    letter-spacing: -0.06em;
+    font-size: 13px;
+}
+
+/* お得なエコパッケージ2個セット */
+
+.content3 .title2 {
+    letter-spacing: -0.05em;
+}
+
+
+/* 特別価格から定期コースご注文の方 */
+
+.special-price {
+    height: 200px;
+}
+
+.special-price img {
+    width: 100%;
+    height: 230px;
+}
+
+
+.price-content img {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.price-content li {
+    font-size: 20px;
+}
+
+
+
+
+/* 連絡先 */
+
+.access-content img {
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.main-access .p6 {
+    font-size: 14px;    
+}
+
+.main-access .p6 span {
+    font-size: 15px;    
+}
+
+.main-access .p7 {
+    padding-top: 5px;
+    font-size: 18px;
+} 
+
+/* 
+=====================
+フッター
+=====================
+*/
+footer {
+    height: 150px;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 600px;
+}
+
+/* 左側 */
+.footer-access {
+    width: 45%;
+}
+
+/* ロゴ */
+.footer-logo p {
+    font-size: 12px;
+}
+
+/* 連絡先 */
+
+.footer-tell h3 {
+    font-size: 13px;
+
+}
+
+.footer-tell a {
+    font-size: 13px;
+
+}
+
+.footer-tell p {
+    font-size: 10px;
+
+}
+
+/* 右側：メニュー */
+.footer-menue-pc {
+    padding-top: 10px;
+}
+.footer-menue-pc .non-border {
+    width: 140px;
+}
+
+
+.footer-menue-pc .border {
+    width: 140px;
+}
+
+.footer-menue-pc a {
+    width: 140px;
+    font-size: 9px;
+}
+
+
+
+
+}
+
+
+
+
+/* 
+====================================================================================
+横並び→縦並び　スマホ向け
+====================================================================================
+*/
+
+
+@media screen and (max-width:600px ) {
+
+/* 
+=====================
+ヘッダー
+=====================
+*/
+header {
+    height: 80px;
+}
+
+.header-content {
+    padding: 0 20px;
+    height: 80px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header-log {
+    width: 30%;
+}
+
+.header-access-pc {
+    display: none;
+}
+
+.header-access {
+    width: 50%;
+    display: block;
+    float: right;
+    text-align: center;
+}
+
+.header-access p {
+    color: white;
+    line-height: 1.3em;
+    font-size: 10px;
+}
+
+.header-access h1 {
+    font-size: 12px;
+    width: 100%;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+.header-tell {
+    display: block;
+}
+
+.header-tell img {
+    padding: 0 20px;
+    width: 100%;
+}
+
+
+
+/* 
+=====================
+本文
+=====================
+*/
+
+/* タイトル１ */
+.title1 {
+    font-size: 15px;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* タイトル２ */
+.title2 {
+    font-size: 15px;
+    height: auto;
+    padding-left: 10px;
+}
+
+/* 本文全体 */
+.content1, .content2, .content3, .special-price {
+    max-width: 400px;
+} 
+
+.main-access {
+    max-width: 400px;
+}
+
+
+/* 商品 */
+.price {
+    padding: 10px;
+}
+
+.product .p0 {
+    font-size: 8px;
+}
+
+.product ul {
+    width: 100%;
+    display: block;
+}
+
+.product li {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product li:nth-child(n+2) {
+    padding-top: 50px;
+}
+
+.product .p0 {
+    display: block;
+    height: auto;
+}
+
+
+/* コロナ感染予防対策～特別キャンペーン企画～ */
+.content1 .product .p0 {
+    height: auto;
+}
+
+
+/* コラーゲン不足が気になる方！酵素＆コラーゲン効果を実感！ */
+
+.content2 .product li:last-child h4 {
+    letter-spacing: -0.1em;
+    font-size: 12px;
+}
+
+.content2 .product .p0 {
+    height: auto;
+}
+
+/* お得なエコパッケージ2個セット */
+
+.content3 .product li:last-child h4 {
+    letter-spacing: 0;
+    font-size: 12px;
+}
+
+.content3 .product .p0 {
+    height: auto;
+}
+
+.content3 .product ul:last-child .p0 {
+    height: auto;
+}
+
+
+/* 特別価格から定期コースご注文の方 */
+
+.special-price {
+    height: 170px;
+}
+
+.special-price img {
+    width: 100%;
+    height: 170px;
+}
+
+.price-content {
+    height: 120px;
+}
+
+.price-content img {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.price-content ul {
+    width: 210px;
+}
+
+.price-content li {
+    font-size: 13px;
+    line-height: 1.6em;
+}
+
+
+
+/* 連絡先 */
+.main-access {
+    height: auto;
+}
+
+.main-access .flame {
+    height: 140px;
+    margin: 0 auto;
+}
+
+.access-content {
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.access-content img {
+    max-height: 30px;
+    object-fit: contain;
+}
+
+.main-access .p6 {
+    font-size: 12px;    
+    line-height: 1.4em;
+    padding: 5px 20px;
+    display: block;
+}
+
+.main-access .p6 span {
+    font-size: 15px;    
+    display: block;
+    padding-left: 0;
+}
+
+.main-tell {
+    height: auto;
+}
+
+.main-access .p7 {
+    padding-top: 5px;
+    font-size: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+/* 
+=====================
+フッター
+=====================
+*/
+footer {
+    height: 270px;
+    width: 100%;
+}
+
+/* 左側 */
+.footer-access {
+    width: 45%;
+}
+
+/* ロゴ */
+.footer-logo p {
+    font-size: 12px;
+}
+
+/* 連絡先 */
+
+.footer-tell h3 {
+    font-size: 10px;
+
+}
+
+.footer-tell a {
+    font-size: 16px;
+
+}
+
+.footer-tell p {
+    font-size: 10px;
+
+}
+
+/* PC用は隠す */
+.footer-menue-pc {
+    display: none;
+}
+
+/* スマホ用表示 */
+.footer-menue {
+    display: block;
+    width: 60%;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.footer-menue li {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.4em;
+    padding: 2px;
+}
+
+.footer-menue .border {
+    display: block;
+    width: 200px;
+    border-bottom: 1px dotted white;
+    margin: 0 auto;
+}
+
+.footer-menue .non-border {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.footer-menue a {
+    display: block;
+    width: 200px;
+    color: white;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.footer-menue a:hover {
+    opacity: 0.5;
+}
+
+/* スマホ用メニュー */
+.footer-menue {
+    width: 50%;
+}
+
+.footer-menue li {
+    width: 99%;
+}
+
+.footer-menue .border {
+    width: 145px;
+}
+
+.footer-menue .non-border {
+    width: 145px;
+}
+
+.footer-menue a {
+    width: 145px;
+    font-size: 11px;
+}
+
+
+}
